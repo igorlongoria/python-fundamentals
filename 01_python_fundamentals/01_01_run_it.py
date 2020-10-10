@@ -26,4 +26,6 @@ minutes_in_an_hour = 60
 second_in_a_minute = 60
 seconds_in_a_year = (days * hours_in_a_day * minutes_in_an_hour * second_in_a_minute)
 z = seconds_in_a_year
-print(z)
+x = "There are"
+y = "seconds in a year"
+print(x, z, y)
