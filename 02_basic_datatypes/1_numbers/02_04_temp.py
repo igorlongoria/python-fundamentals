@@ -10,3 +10,8 @@ Output should read like - "81.32 degrees fahrenheit = 27.4 degrees celsius"
 
 
 '''
+f = 75
+c = (f -32) * (5/9)
+x = "degrees fahrenheit ="
+y = "degrees celsius."
+print(f, x, c, y)

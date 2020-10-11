@@ -7,3 +7,6 @@ Letter input: o
 Result: 4
 
 '''
+x = input("Please type your name: ")
+y = input("Pick a letter from your name: ")
+print(x.find(y))
