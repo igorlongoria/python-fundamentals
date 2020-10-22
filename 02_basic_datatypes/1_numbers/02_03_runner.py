@@ -15,3 +15,4 @@ average_speed_per_hour = (x / y) * 60
 z = average_speed_per_hour
 a = "km/hr"
 print(z, a)
+
