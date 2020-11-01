@@ -7,3 +7,9 @@ The output of your calculation should therefore look like this:
 
 The sum is: 5050
 '''
+start = 1
+end = 100
+n = 0
+for i in range(start, end+1):
+    n = n + i
+print("The sum is:", n)
