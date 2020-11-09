@@ -6,3 +6,8 @@ user_input = "hello"
 result = {"h": 1, "e": 1, "l": 2, "o": 1}
 
 '''
+string = "hello"
+my_dict = {}
+for item in string:
+    my_dict[item] = string.count(item)
+print(my_dict)

@@ -20,4 +20,12 @@ famous_quotes = [
 ]
 
 for item in famous_quotes:
-    print(item)
+    name = item["full_name"]
+    name_list = name.split()
+    first_name = name_list[0]
+    last_name = name_list[1]
+    quote = item["quote"]
+    if len(name_list) == 3:
+        last_name = name_list[2]
+        first_name += " " + name_list[1]
+    print(f'"{quote}"  -  {last_name}, {first_name}')
