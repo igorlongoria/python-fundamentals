@@ -6,15 +6,27 @@ Print these values to the console when calling the function.
 
 example_list = [1, 2, 3, 4, 5, 6, 7]
 
-def stats():
+def stats(Sample_list):
   # define the function here
-  for i in example_list:
-    max_ = max(example_list)
-    min_ = min(example_list)
-    average_ = sum(example_list) // max_
-    sum_ = sum(example_list)
-  print(max_, min_, average_, sum_)
-  pass
+    max_ = max(Sample_list)
+    min_ = min(Sample_list)
+    average_ = sum(Sample_list) // max_
+    sum_ = sum(Sample_list)
+
+    return max_, min_, average_, sum_
+
 
 # call the function below here
-stats()
+x = stats(example_list)
+#ma, mi, avg, su, = x
+ma, mi, avg, su, = stats(example_list)
+print(ma, mi, avg, su)
+
+def my_max(any_list):
+    largest_number = any_list[0]
+    for i in any_list:
+      if i > largest_number:
+        largest_number = i
+    return largest_number
+
+print(my_max([34, 356, 33, 456, 123, 97]))
