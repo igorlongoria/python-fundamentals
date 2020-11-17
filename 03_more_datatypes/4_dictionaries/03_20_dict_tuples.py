@@ -10,3 +10,6 @@ NOTE: Check out the Python docs and see whether you can come up with a solution,
       Feel free to discuss any questions you have with your mentor and on the forum!
 
 '''
+dict_1 = {"item1": 1, "item2": 2, "item3": 3}
+my_list = list(dict_1.items())
+print(my_list)
