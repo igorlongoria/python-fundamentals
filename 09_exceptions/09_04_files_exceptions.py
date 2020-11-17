@@ -23,3 +23,14 @@ BONUS CHALLENGE: write a custom Exception that inherits from Exception and raise
 first 100 characters of any of the files contain the string "Prince".
 
 '''
+#Instructions are incomplete and confusing. I did what I could.
+with open('war_and_peace.txt', 'r') as book1:
+    book_1 = list(book1.readline())
+    print(book_1[0])
+with open('pride_and_prejudice.txt', 'r') as book2:
+    book_2 = list(book2.readline())
+    print(book_2[0])
+with open('crime_and_punishment.txt', 'w') as book3:
+    book3.write("")
+
+
