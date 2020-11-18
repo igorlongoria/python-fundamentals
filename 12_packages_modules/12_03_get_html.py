@@ -9,3 +9,9 @@ TIP:
     very common. head over to SO and find a solution!
 
 '''
+# I installed the requests module in my terminal.
+import requests
+
+x = requests.get("https://codingnomads.co/online-coding-bootcamp-mentorship")
+
+print(x.text)

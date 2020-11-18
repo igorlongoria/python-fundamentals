@@ -3,3 +3,12 @@ Do some research on other popular python packages and what the are used for. Fee
 and play around a little.
 
 '''
+import datetime
+
+x = datetime.datetime.now()
+print(x)
+
+import calendar
+cal = calendar.Calendar(firstweekday = 0)
+for i in cal.iterweekdays():
+    print(i)
