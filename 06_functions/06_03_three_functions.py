@@ -10,7 +10,7 @@ def square(x):
 
 def sum_squares(a,b,c):
     return(square(a) + square(b) + square(c))
-print(sum_squares(4,5,6))
+print(sum_squares(3,5,6))
 
 sum_example_1 = (sum_squares(23,34,43))
 sum_example_2 = (sum_squares(12,12,64))
