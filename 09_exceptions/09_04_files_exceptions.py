@@ -24,6 +24,8 @@ first 100 characters of any of the files contain the string "Prince".
 
 '''
 #Instructions are incomplete and confusing. I did what I could.
+import os
+
 with open('war_and_peace.txt', 'r') as book1:
     book_1 = list(book1.readline())
     print(book_1[0])
@@ -33,4 +35,15 @@ with open('pride_and_prejudice.txt', 'r') as book2:
 with open('crime_and_punishment.txt', 'w') as book3:
     book3.write("")
 
+for dirpath, dirnames, files in os.walk('books'):
+    print(f'Found directory: {dirpath}')
+    print(f"{dirnames}, files is {files}")
+    for file_name in files:
+        print(file_name)
+
+        full_file_name = os.path.join(dirpath, file_name)
+        print(full_file_name)
+        with open(full_file_name, 'r') as book:
+            first_line = list(book.readline())
+            print(first_line[0])
 
